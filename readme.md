@@ -1,4 +1,25 @@
 # GooMinHoi_iOS_School6
 ---
-# Git 학습자료#
-Git 사용법에 대한 공부
+# 구민회#
+
+__-Contents__
+=============
+* About me
+* iOS School
+* Study
+* Contact Information
+
+---
+__1.About me__
+> * project
+
+
+__2.iOS School__
+
+>  * [What is Git?](/Class/Git_SelfStudy.pdf "What is Git?")
+
+>  * [OOP](/Class/oopbasic.md "OOP")
+
+>  * Xcode
+
+  
