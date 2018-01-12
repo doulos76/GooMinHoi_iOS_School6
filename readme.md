@@ -22,5 +22,5 @@ __2.iOS School__
 
 >  * Xcode
 
->  * [Practice1: makeClassAndInstance] (/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
+>  * [Practice1: makeClassAndInstance](/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
  
