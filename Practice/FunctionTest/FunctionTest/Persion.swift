@@ -34,13 +34,13 @@ class Persion {
     
     // Method
     // Personnal information print
-    func profile(name: String, company: String, employeeNumber: Int) /*-> String */{
+    func profile(name: String, company: String, employeeNumber: Int) -> String {
         self.name = name
         self.company = company
         self.employeeNumber = employeeNumber
         let personalInformation: String = self.name + "\n" + self.company + "\n" + String(self.employeeNumber)
         print(personalInformation)
-        //return personalInformation
+        return personalInformation
     }
     
     // time to go to work Hours

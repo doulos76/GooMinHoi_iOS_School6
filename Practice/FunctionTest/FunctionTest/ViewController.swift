@@ -13,13 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 시작시점!
+        
+        
         let brad: Persion = Persion()
         var pointBrad: Int = 0
         brad.company = "Apple Inc."
         brad.name = "Brad Fit"
         brad.employeeNumber = 12345678
-       // brad.profile(name: brad.name, company: brad.company, employeeNumber: brad.employeeNumber)
-        
+        let personalDataOfBrad: String = brad.profile(name: brad.name, company: brad.company, employeeNumber: brad.employeeNumber)
+        print(personalDataOfBrad)
         
         brad.goToWork(time: 8)
         brad.engineeringJob = "New Project - Log on API Design"
@@ -36,7 +38,10 @@ class ViewController: UIViewController {
         james.company = "Google"
         james.employeeNumber = 132456
         james.goToWork(time: 10)
-        //james.profile(name: james.name, company: james.company, employeeNumber: james.employeeNumber)
+        
+        let personalDataOfJames: String = james.profile(name: james.name, company: james.company, employeeNumber: james.employeeNumber)
+        print(personalDataOfJames)
+        
         pointJames = james.doneWorkEngineeringJob(about: "Deep Learning")
         pointJames = james.doneWorkEngineeringJob(about: "Design Web browing algorithm")
         pointJames = james.doneWorkEngineeringJob(about: "Debug Error")
