@@ -24,4 +24,4 @@ __2.iOS School__
 
 >  * [Practice1: makeClassAndInstance](/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
  
->  * [Practice2: BasicCalculator](/Practice/FunctionTest/BasicCalculator.md "Practice2: BasicCalculator")
+>  * [Practice2: BasicCalculator](/Practice/BasicCalculator/BasicCalculator.md "Practice2: BasicCalculator")
