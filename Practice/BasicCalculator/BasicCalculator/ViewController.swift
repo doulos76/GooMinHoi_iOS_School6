@@ -60,6 +60,9 @@ class ViewController: UIViewController {
         
     }
     
+    /// 연산자 입력 Method
+    /// Touch시 touch된 연산자 입력됨
+    /// - Parameter sender: "+,-,×,÷" Button touch
     @IBAction func clickDidOperation(_ sender: UIButton) {
         let operStr = sender.titleLabel!.text!
         
@@ -70,13 +73,19 @@ class ViewController: UIViewController {
         }
     }
     
+    /// Cancel Button Method
+    /// 취소 버튼 Method
+    /// - Parameter sender: "c" Button touch
     @IBAction func clickDidCancel(_ sender: UIButton) {
         print("did Cancel")
         resetDisplay()
         resetData()
     }
     
-    
+
+    /// 결과표시 Method
+    /// 클릭후 결과값 표시 Method
+    /// - Parameter sender: "=" Button touch
     @IBAction func clickDidResult(_ sender: UIButton) {
 //        let secondNumStr = secondNumDisplay.text!
         if secondNum != "0" {
