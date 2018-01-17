@@ -86,17 +86,6 @@ func volume(height: Double, horizontal: Double = 0, vertical: Double = 0, radian
 volume(height: 10, horizontal: 10)
 ```
 
-//switch-case
-// 월을 입력받아ㅏ 해당월의 이름을 반환해주는 함수(ex: 1 >>> "Jan", 12 >>> "Dec", 13 >> "Error"
-//년/월을 입력받아 해당 마지막 날을 반환 해주는 함수(윤년 고려)
-//if문 변환
-//시험점수를 입력받아 대학교grade로 나눠서 반환해주는 함수 (ex:95 >>> "A+" /// 80 >>> "B")
-
-// 도형 부피 구하기 함수
-// 도형 넓이 구하기 함수
-// ex
-
-
 ## 월을 입력받아 해당월의 이름을 반환해주는 함수
 > (ex: 1 >>> "Jan", 12 >>> "Dec", 13 >> "Error")
 
