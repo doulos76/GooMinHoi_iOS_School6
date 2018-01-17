@@ -1,6 +1,6 @@
 # GooMinHoi_iOS_School6
 ---
-# 구민회#
+# 구민회
 
 __-Contents__
 =============
@@ -55,9 +55,9 @@ __Swift__
 3. __흐름 제어문__
 
 
-   > * if문
+   > * [if문](Practice/if_Statement.md "if문")
    
-   > * switch-case문
+   > * [switch-case문](Practice/switch_statement.md "switch-case문")
 
 __iOS__
 ---
