@@ -54,10 +54,9 @@ __Swift__
 
 3. __흐름 제어문__
 
-
-   > * [if문](/Practice/if_Statement.md "if문")
-   
-   > * [switch-case](/Practice/switchCaseStatement.md "switch-case")
+	> * [if문](/Practice/if_Statement.md "if문")
+    
+	> * [switch-case문](/Practice/switchCaseStatement.md "switch-case문")
 
 __iOS__
 ---
