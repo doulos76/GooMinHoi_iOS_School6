@@ -101,7 +101,7 @@ __Study__
 > 
 > 3. __Flow Control statement__
 >
->  * [flowControlStatement](Practice/flowControlStatement.md "flowControlStatement")
+>  * [flowCountrolStatement](Practice/flowCountrolStatement.md "flowCountrolStatement")
 
 
 
