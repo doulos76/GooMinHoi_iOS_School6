@@ -56,7 +56,7 @@ __Swift__
 
 	> * [if문](/Practice/if_Statement.md "if문")
     
-	> * [switch-case문](./Practice/switchCaseStatement.md "switch-case문")
+	> * [switch-case문](/Practice/switch.md "switch-case문")
 
 __iOS__
 ---
