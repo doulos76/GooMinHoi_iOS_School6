@@ -52,7 +52,7 @@ __Swift__
    
 	>    - 변수 및 함수 선언, 수학(기하학) 도형 함수, 단위 변환기
 
-3. __제어문__
+3. __흐름 제어문__
 
 
    > * if문
@@ -92,22 +92,17 @@ __Study__
 
 * Swift 문법
 
-> 0. __basic__
+> 1. __basic-Class, Instance, Vaiables__
 > 
 >   * [class](Class/class.md "class")   
-> 1. __Class__
->
->
 > 2. __Instance__
 > 
 >	* [Instance & Function](Practice/functionPractice.md "Instance & Function")
-> 3. __Variable__
+> 
+> 3. __Flow Control statement__
 >
->
-> 4. __if statement__
->
->
-> 5. __switch ~ case statement__
+>  * [flowControlStatement](Practice/flowControlStatement.md "flowControlStatement")
+
 
 
 
