@@ -234,3 +234,22 @@ convertionOfIntToDouble(doubleNumber: 341.3)
 //// modulus %
 //converterOfIntegerTodoubleNumber(Double: 34.7)
 //converterOfIntegerTodoubleNumber(Double: 23.3)
+
+//시험점수 여러개를 입력받아서(4개이상) 평균을 반환해주는 함수
+func averageOf(korean: Int, english: Int, math: Int, science: Int) -> Double
+{
+    let totalScroe: Int = korean + english + math + science
+    let avearge: Double = Double(totalScroe) / 4
+    return avearge
+}
+
+//정수를 두개를 입력받아 두수를 합친수를 출력하는 함수 (ex: 3,4 입력시 >>> 34 /// 1,0 입력시 >>> 10)
+func combineInt(num1: Int, num2: Int) -> String
+{
+    return String(num1) + String(num2)
+}
+//실수를 하나 입력받아서 소수점 첫번재 자리에서 반올림 후 정수를 반환해주는 함수
+func roundup(number: Double) -> Int {
+    let addhalfnum = number + 0.5
+    return Int(addhalfnum)
+}

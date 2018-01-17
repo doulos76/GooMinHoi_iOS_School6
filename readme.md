@@ -4,28 +4,97 @@
 
 __-Contents__
 =============
-* About me
-* iOS School
-* Study
-* Contact Information
+
+	* About me
+	* iOS School
+	* Study
+
+
+__About me__
+===
+---
+* My Profile
+  + Name : Min Hoi Goo
+  + E-mail : [inojyes@gmail.com] (inojyes@gmail.com)
+
+* My Project
+  + Calculator
+ 
 
 ---
-__1.About me__
-> * project
+iOS School
+===
+---
+
+__Project__
 
 
-__2.iOS School__
+1. 계산기
 
->  * [What is Git?](/Class/Git_SelfStudy.pdf "What is Git?")
+	> * [Practice2: BasicCalculator](/Practice/BasicCalculator/BasicCalculator.md "Practice2: BasicCalculator")
 
->  * [OOP](/Class/oopbasic.md "OOP")
+2. 단위 변환기
 
->  * Xcode
 
->  * [Practice1: makeClassAndInstance](/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
+
+__Swift__
+
+1. __Class & Instance__
+
+	>  * [Practice1: makeClassAndInstance](/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
+
+
+2. __변수 및 함수 선언__ (수학(기하학) 도형 함수, 단위 변환기)
+
+	>  * [Practice3: MyPlayground](/Practice/MyPlayground/VariablesAndFunction.md "Practice3: VariablesAndFunction")
+   
+	>    - 변수 및 함수 선언, 수학(기하학) 도형 함수, 단위 변환기
+
+3. __제어문__
+
+   * if문
+   
+   * switch-case문
+
+__iOS__
+
+1. __객체 지향 프로그래밍__
+
+	>  * [OOP](/Class/oopbasic.md "OOP")
  
->  * [Practice2: BasicCalculator](/Practice/BasicCalculator/BasicCalculator.md "Practice2: BasicCalculator")
-> 
->  * [Practice3: MyPlayground](/Practice/MyPlayground/VariablesAndFunction.md "Practice3: VariablesAndFunction")
->    
->    - 변수 및 함수 선언, 수학(기하학) 도형 함수, 단위 변환기
+
+__Etc__
+
+1. __Git__
+
+	>  * [What is Git?](/Class/Git_SelfStudy.pdf "What is Git?")
+
+2. __Mark Down__
+
+	>  * [Mark Down 명령어](Class/MarkdownGrammar.md "Mark Down 명령어")
+
+
+3. __Unix Command Window 명령어__
+
+	>
+
+4. __Xcode__
+
+	>  * Short-Cut
+	      + [Xcode 단축키](Class/xcodeshortcut.md "Xcode 단축키")
+
+__Study__
+
+* Swift 문법
+	> 1. __Class__
+
+	> 2. __Instance__
+
+	> 3. __Variable__
+
+	> 4. __if statement__
+
+	> 5. __switch ~ case statement__
+
+
+
