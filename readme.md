@@ -93,15 +93,20 @@ __Study__
 * Swift 문법
 
 > 0. __basic__
-   * [class](Class/class.md "class")   
+> 
+>   * [class](Class/class.md "class")   
 > 1. __Class__
-
+>
+>
 > 2. __Instance__
-	* [Instance & Function](Practice/functionPractice.md "Instance & Function")
+> 
+>	* [Instance & Function](Practice/functionPractice.md "Instance & Function")
 > 3. __Variable__
-
+>
+>
 > 4. __if statement__
-
+>
+>
 > 5. __switch ~ case statement__
 
 

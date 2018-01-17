@@ -132,7 +132,7 @@ func sub(input1 num1: Int, input2 num2: Int) -> Int {
 
 * __2-c. 두개의 정수를 입력받아 두수의 곱을 반환해주는 함수__
 
-```
+```swift
 func mul(input1 num1: Int, input2 num2: Int) -> Int {
     let mul: Int = num1 * num2
     return mul
@@ -141,7 +141,7 @@ func mul(input1 num1: Int, input2 num2: Int) -> Int {
 
 * __2-d. 두개의 정수를 입력받아 두수의 나누셈을 반환해주는 함수__
 
-```
+```swift
 func div(input1 num1: Int, input2 num2: Int) -> Double {
     let div: Double = Double(num1) / Double(num2)
     return div
