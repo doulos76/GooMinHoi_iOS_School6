@@ -81,17 +81,17 @@ __Etc__
 
 3. __Unix Command Window 명령어__
 
-	>
+	> * [Unix 명령어](Class/unixCommand.md "Unix 명령어")
 
 4. __Xcode__
 
-	>  * Short-Cut
-	      + [Xcode 단축키](Class/xcodeshortcut.md "Xcode 단축키")
+	>  * [Xcode 단축키](Class/xcodeshortcut.md "Xcode 단축키")
 
 __Study__
 ---
 
 * Swift 문법
+
    > 0. __basic__
 		* [class](Class/class.md "class")   
 	> 1. __Class__
