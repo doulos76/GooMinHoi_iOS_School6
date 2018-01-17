@@ -15,8 +15,8 @@ __About me__
 ---
 * My Profile
   + Name : Min Hoi Goo
-  + E-mail : [inojyes@gmail.com] (inojyes@gmail.com)
-
+  + E-mail : <inojyes@gmail.com>
+ 
 * My Project
   + Calculator
  
@@ -27,6 +27,7 @@ iOS School
 ---
 
 __Project__
+---
 
 
 1. 계산기
@@ -38,6 +39,7 @@ __Project__
 
 
 __Swift__
+---
 
 1. __Class & Instance__
 
@@ -52,11 +54,13 @@ __Swift__
 
 3. __제어문__
 
-   * if문
+
+   > * if문
    
-   * switch-case문
+   > * switch-case문
 
 __iOS__
+---
 
 1. __객체 지향 프로그래밍__
 
@@ -64,6 +68,7 @@ __iOS__
  
 
 __Etc__
+---
 
 1. __Git__
 
@@ -84,8 +89,11 @@ __Etc__
 	      + [Xcode 단축키](Class/xcodeshortcut.md "Xcode 단축키")
 
 __Study__
+---
 
 * Swift 문법
+   > 0. __basic__
+		* [class](Class/class.md "class")   
 	> 1. __Class__
 
 	> 2. __Instance__
