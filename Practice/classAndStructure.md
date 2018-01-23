@@ -1,7 +1,7 @@
-#클래스와 구조체
+# 클래스와 구조체
 
 
-##Class & Structures
+## Class & Structures
 
 >"Classes and Structures are general-purpose, flexible constructs that become the building blocks of your program's code.
 You define properties and methods to add functionality to your classes and structures by using exactly the same syntax as for constants, variables, and functions."
@@ -26,7 +26,7 @@ You define properties and methods to add functionality to your classes and struc
 
 * Protocol을 채택하여 사용할 수 있다.
 
-###기본 구조
+### 기본 구조
 
 ```swift
 class SomeClass {
@@ -40,7 +40,7 @@ structure SomeStructure {
 }	
 ```
 
-###properties
+### properties
 
 ```swift
 class VideoMode {
@@ -60,7 +60,7 @@ sturcture Resolution {
 
 ```
 
-###instance
+### instance
 
 ```swift
 // class
@@ -72,7 +72,7 @@ let someResolution: Resolution = Resolution()
 
 ```
 
-###Properties 접근
+### Properties 접근
 
 ```swift
 //class
@@ -88,7 +88,7 @@ print("Resolution is \(someResolution.width)")
 * 닷(.)문법을 통해 접근
 
 
-###Initialization(초기화)
+### Initialization(초기화)
 
 >Initialization is the process of preparing an instance of a class, structure, or enumeration for use.
 
@@ -107,7 +107,7 @@ print("Resolution is \(someResolution.width)")
 - 직전에 해야 할 일 : initialization
 
 
-###base Initializers
+### base Initializers
 
 ```swift
 sturct Subject {
@@ -126,7 +126,7 @@ var wingMan: Person = Person() // <- Initializers
 // = var wingMan: Person = Person.init()
 ```
 
-###Memberwise Initializers
+### Memberwise Initializers
 
 ```swift
 
