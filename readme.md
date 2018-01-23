@@ -91,9 +91,13 @@ __Study__
 
 * Swift 문법
 
-> 1. __basic-Class, Instance, Vaiables__
-> 
->   * [class](Class/class.md "class")   
+> 1. __Variable (변수)__
+> 	* [변수](Practice/Variable.md "변수")
+> 2. __Operater (연산자)__
+> 	* [연산자](Practice/operator.md "연산자")
+> 3. __Class__
+>	* [class](Class/class.md "class")
+> 	* [클래스와 구조체](Practice/classAndStructure.md "클래스와 구조체")   
 > 2. __Instance__
 > 
 >	* [Instance & Function](Practice/functionPractice.md "Instance & Function")
