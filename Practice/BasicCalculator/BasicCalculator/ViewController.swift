@@ -15,10 +15,28 @@ class ViewController: UIViewController {
     @IBOutlet var secondNumDisplay: UILabel!
     @IBOutlet var resultDisplay: UILabel!
 
-    var operationTemp: String = ""  // operator 임시 저장 변수
+    var operationTemp: String?  // operator 임시 저장 변수
     
-    var firstNum: String = "0"   // 실제 계산을 위한 첫번째 숫자
-    var secondNum: String = "0"  // 실제 계산을 위한 두번째 숫자
+    // 실제 계산을 위한 첫번째 숫자
+    var firstNum: String? {
+        willSet(nextValue) {
+            if let newValue = nextValue
+            {
+                firstNumDisplay.text = newValue
+            }
+        }
+    }
+    
+    // 실제 계산을 위한 두번째 숫자
+    var secondNum: String? {
+        willSet(nextValue) {
+            if let newValue = nextValue
+            {
+                secondNumDisplay.text = newValue
+            }
+        }
+    }
+    
     var resultNum: String = "0"  // 실제 계산 결과갑
     
     override func viewDidLoad() {
@@ -32,32 +50,49 @@ class ViewController: UIViewController {
         //버튼에 있는 택스트 가져오기
         let numberStr: String = sender.titleLabel!.text!
         //연산자 유무확인
-        if operationTemp.count > 0 {
-//            let secondDisplay = secondNumDisplay.text!
+        if let _ = operationTemp
+        {
+            inputNum(numberStr, tempProperty: &secondNum)
+        } else {
+            resetDisplay()
+            inputNum(numberStr, tempProperty: &firstNum)
+        }
+        
+        if operationTemp?.count > 0 {
+            let secondDisplay = secondNumDisplay.text!
             if secondNum == "0" {
-//                secondNumDisplay.text = numberStr
+                secondNumDisplay.text = numberStr
                 secondNum = numberStr
             } else {
-//                secondNumDisplay.text = secondNumDisplay.text! + numberStr
-                secondNum = secondNum + numberStr
+                secondNumDisplay.text = secondNumDisplay.text! + numberStr
+                secondNum = secondNum! + numberStr
             }
             secondNumDisplay.text = secondNum
         } else {
-//            let firstDisplay = firstNumDisplay.text!
+            let firstDisplay = firstNumDisplay.text!
             if firstNum == "0" {
-//                firstNumDisplay.text = numberStr
+                firstNumDisplay.text = numberStr
                 // 최초 계산기 시작을 위한 위치
                 resetDisplay()
                 firstNum = numberStr
             } else {
-//                firstNumDisplay.text = firstNumDisplay.text! + numberStr
-                firstNum = firstNum + numberStr
+                firstNumDisplay.text = firstNumDisplay.text! + numberStr
+                firstNum = firstNum! + numberStr
             }
             firstNumDisplay.text = firstNum
         }
-        
-        
-        
+    }
+    
+    private func inputNum(_ numStr: String, tempProperty: inout String?)
+    {
+        if let num = tempProperty
+        {
+            tempProperty = num + numStr
+        }
+        else
+        {
+            tempProperty = numStr
+        }
     }
     
     /// 연산자 입력 Method
@@ -66,7 +101,7 @@ class ViewController: UIViewController {
     @IBAction func clickDidOperation(_ sender: UIButton) {
         let operStr = sender.titleLabel!.text!
         
-//        let firstDisplay = firstNumDisplay.text!
+        let firstDisplay = firstNumDisplay.text!
         if firstNum != "0" {
             operationTemp = operStr
             changeColor(by: operStr)
@@ -87,11 +122,11 @@ class ViewController: UIViewController {
     /// 클릭후 결과값 표시 Method
     /// - Parameter sender: "=" Button touch
     @IBAction func clickDidResult(_ sender: UIButton) {
-//        let secondNumStr = secondNumDisplay.text!
+        let secondNumStr = secondNumDisplay.text!
         if secondNum != "0" {
-            let firstNumTemp: Int = Int(firstNum)!
-            let secondNumTemp: Int = Int(secondNum)!
-            let op: String = operationTemp
+            let firstNumTemp: Int = Int(firstNum!)!
+            let secondNumTemp: Int = Int(secondNum!)!
+            let op: String = operationTemp!
             
             let resultNum = calculation(firstNum: firstNumTemp, operation: op, secondNum: secondNumTemp)
             resultDisplay.text = String(resultNum)

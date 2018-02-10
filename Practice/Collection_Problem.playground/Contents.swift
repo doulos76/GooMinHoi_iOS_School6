@@ -126,6 +126,9 @@ printDictinary(of: sampelDic)
 
 
 
+let names: [String?] = Array<String?>(repeatElement(nil, count: 10))
+/// 배열의 길이를 처음에 10으로 잡아주고, 각 공간을 nil로 채움
+
 
 
 
