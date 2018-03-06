@@ -1,111 +1,109 @@
-# GooMinHoi_iOS_School6
----
-# 구민회
+# Fast campus __iOS__ School #
 
-__-Contents__
-=============
+- for study in Jan...Now { lecture( ); study_iOS( ); project( ); }
 
-	* About me
-	* iOS School
-	* Study
+## Contents ##
+
+* Project
+* Swift Study
+* iOS Framework Study
+* OOP(Object-Orientied Programming)
+* Algorithm
+* Design Pattern
+* Xcode
+* Git
+* Mark Down
+* Unix CMD
+* About me
+
+## Project ##
+
+### 계산기 ###
+
+* [Practice2: BasicCalculator](/Practice/BasicCalculator/BasicCalculator.md "Practice2: BasicCalculator")
+
+### 단위 변환기 ###
 
 
-__About me__
-===
----
+## Swift Study ##
+
+### Variable ###
+
+* [변수](Practice/Variable.md "변수")
+* [Practice3: MyPlayground](/Practice/MyPlayground/VariablesAndFunction.md "Practice3: VariablesAndFunction")
+
+### Operater (연산자) ###
+
+* [연산자](Practice/operator.md "연산자")
+
+### Class ###
+* [class](Class/class.md "class")
+* [클래스와 구조체](Practice/classAndStructure.md "클래스와 구조체")   
+* [Practice1: makeClassAndInstance](/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
+
+### Initialization ###
+
+* [Initialization](Practice/Initialization.md "Initialization")
+
+### Instance ###
+
+* [Instance & Function](Practice/functionPractice.md "Instance & Function")
+ 
+### Flow Control statement ###
+
+* [flowCountrolStatement](Practice/flowCountrolStatement.md "flowCountrolStatement")
+* [if문](/Practice/if_Statement.md "if문")
+* [switch_case문](/Practice/switchcase.md "switch_case문")
+
+### Optional ###
+* [Optional](Practice/Optional.md "Optional")
+
+### Access Control ###
+* [Access Control](Practice/AccessControl.md "Access Control")
+
+### Collection ###
+* [Collection](Practice/CollectionType.md "Collection")
+
+
+
+## iOS Framework Study ##
+
+* [Auto Layout](/Class/Lecture_AutoLayout.md "Auto Layout")
+
+## Object-Oriented Programming ##
+
+* [OOP](/Class/oopbasic.md "OOP")
+ 
+## Algorithm ##
+
+
+## Design Pattern ##
+
+* [Singleton](/Class/DesignPattern-Singleton.md "Singleton") 
+
+## Git ##
+
+* [What is Git?](/Class/Git_SelfStudy.pdf "What is Git?")
+
+## Mark Down ##
+
+* [Mark Down 명령어](Class/MarkdownGrammar.md "Mark Down 명령어")
+
+
+## Unix Command Window 명령어 ##
+
+* [Unix 명령어](Class/unixCommand.md "Unix 명령어")
+
+## Xcode ##
+
+ * [Xcode 단축키](Class/xcodeshortcut.md "Xcode 단축키")
+
+## About me ##
+
 * My Profile
-  + Name : Min Hoi Goo
+  + Name : Minhoi Goo
   + E-mail : <inojyes@gmail.com>
+  + Git : <https://github.com/doulos76>
  
-* My Project
-  + Calculator
- 
-
----
-iOS School
-===
----
-
-__Project__
----
-
-
-1. 계산기
-
-	> * [Practice2: BasicCalculator](/Practice/BasicCalculator/BasicCalculator.md "Practice2: BasicCalculator")
-
-2. 단위 변환기
-
-
-
-__Swift__
----
-
-1. __Class & Instance__
-
-	>  * [Practice1: makeClassAndInstance](/Practice/FunctionTest/ClassAndInstanceMake.md "Practice1: makeClassAndInstance")
-
-
-2. __변수 및 함수 선언__ (수학(기하학) 도형 함수, 단위 변환기)
-
-	>  * [Practice3: MyPlayground](/Practice/MyPlayground/VariablesAndFunction.md "Practice3: VariablesAndFunction")
-   
-	>    - 변수 및 함수 선언, 수학(기하학) 도형 함수, 단위 변환기
-
-3. __흐름 제어문__
-
-	> * [if문](/Practice/if_Statement.md "if문")
-	>
-	> * [switch_case문](/Practice/switchcase.md "switch_case문")
-
-__iOS__
----
-
-1. __객체 지향 프로그래밍__
-
-	>  * [OOP](/Class/oopbasic.md "OOP")
- 
-
-__Etc__
----
-
-1. __Git__
-
-	>  * [What is Git?](/Class/Git_SelfStudy.pdf "What is Git?")
-
-2. __Mark Down__
-
-	>  * [Mark Down 명령어](Class/MarkdownGrammar.md "Mark Down 명령어")
-
-
-3. __Unix Command Window 명령어__
-
-	> * [Unix 명령어](Class/unixCommand.md "Unix 명령어")
-
-4. __Xcode__
-
-	>  * [Xcode 단축키](Class/xcodeshortcut.md "Xcode 단축키")
-
-__Study__
----
-
-* Swift 문법
-
-> 1. __Variable (변수)__
-> 	* [변수](Practice/Variable.md "변수")
-> 2. __Operater (연산자)__
-> 	* [연산자](Practice/operator.md "연산자")
-> 3. __Class__
->	* [class](Class/class.md "class")
-> 	* [클래스와 구조체](Practice/classAndStructure.md "클래스와 구조체")   
-> 2. __Instance__
-> 
->	* [Instance & Function](Practice/functionPractice.md "Instance & Function")
-> 
-> 3. __Flow Control statement__
->
->  * [flowCountrolStatement](Practice/flowCountrolStatement.md "flowCountrolStatement")
-
-
 
 
