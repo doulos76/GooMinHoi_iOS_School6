@@ -23,14 +23,17 @@ class ViewController: UIViewController {
         var randomNumberList:[Int] = []
         
         /***************
-        //랜덤 숫자 얻는 코드! 10 = 0~9까지는 랜덤숫자한개
-         let randomNum:Int = Int(arc4random_uniform(10))
-         
-         ////구현되어야 하는 부분
-         
-         
+        랜덤 숫자 얻는 코드! 10 = 0~9까지는 랜덤숫자한개*/
+        let randomNum:Int = Int(arc4random_uniform(10))
+        
+        for _ in 0..<3 {
+            randomNumberList.append(randomNum)
+        }
+        print(randomNumberList)
+         /*구현되어야 하는 부분
         ***************/
         return randomNumberList
+        
     }
 
     /* 결과 확인
