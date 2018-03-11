@@ -4,17 +4,17 @@
 
 ## Contents ##
 
-* Project
-* Swift Study
-* iOS Framework Study
-* OOP(Object-Orientied Programming)
-* Algorithm
-* Design Pattern
-* Xcode
-* Git
-* Mark Down
-* Unix CMD
-* About me
+> Project
+> Swift Study
+> iOS Framework Study
+> OOP(Object-Orientied Programming)
+> Algorithm
+> Design Pattern
+> Xcode
+> Git
+> Mark Down
+> Unix CMD
+> About me
 
 ## Project ##
 
