@@ -13,3 +13,22 @@ class FruitOFTheHolySpirit {
 
 
 var data: [String] = ["Love", "Joy", "Peace", "Patience", "Kindness", "Goodness", "Faithfulness", "Gentleness", "Self-control"]
+
+
+
+/// 표준 출력에 `items` 각 요소의 텍스트 표현을 작성합니다. ⟵ 요약
+///                                             ⟵ 빈 줄
+/// 각 요소인 `x`의 텍스트 표현은 `String(x)` 표현식으로  ⟵ 추가 설명
+/// 제공됩니다.
+///
+/// - 매개변수 seperator: 요소 사이에 출력되는 텍스트
+/// - 매개변수 terminator: 끝부분에 출력되는 텍스트
+///
+/// - 주의: 끝부분에 줄 바꿈을 출력하지 않으려면
+///     `terminator: """`를 전달하세요.
+///
+/// - 참조: `CustomDebugStringConvertibles`,
+///        `CustomStringConvertible`, `debugPrint`.
+public func print {
+    items: Any..., seperator: String = " ", terminator: String = "\n"
+}

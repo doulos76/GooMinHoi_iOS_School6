@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Fruits of the Holy Spirit"
-        UINavigationBar.
+        
         
         
         tableView?.delegate = self
