@@ -12,7 +12,17 @@ class FruitOFTheHolySpirit {
 }
 
 
-var data: [String] = ["Love", "Joy", "Peace", "Patience", "Kindness", "Goodness", "Faithfulness", "Gentleness", "Self-control"]
+var data: [String] = ["love", "Joy", "Peace", "Patience", "Kindness", "Goodness", "Faithfulness", "Gentleness", "Self-control"]
+var imageData: [String] = ["love.png",
+                           "joy.png",
+                           "peace.png",
+                           "Patience.jpg",
+                           "Kindness.jpg",
+                           "Goodness.png",
+                           "Faithfulness.png",
+                           "Gentleness.jpg",
+                           "self-control.jpg"]
+
 
 
 
@@ -29,6 +39,7 @@ var data: [String] = ["Love", "Joy", "Peace", "Patience", "Kindness", "Goodness"
 ///
 /// - 참조: `CustomDebugStringConvertibles`,
 ///        `CustomStringConvertible`, `debugPrint`.
-public func print {
-    items: Any..., seperator: String = " ", terminator: String = "\n"
-}
+//public func print {
+//    items: Any..., seperator: String = " ", terminator: String = "\n"
+//}
+

@@ -17,8 +17,6 @@ class ViewController: UIViewController {
         
         navigationItem.title = "Fruits of the Holy Spirit"
         
-        
-        
         tableView?.delegate = self
         tableView?.dataSource = self
     
@@ -38,6 +36,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = data[indexPath.row]
+        cell.imageView?.image = UIImage(named: imageData[indexPath.row])
+        cell.imageView?.frame = CGRect(x: 10, y: 10, width: 50, height: 50)
+        
+        
         return cell
     }
 }
