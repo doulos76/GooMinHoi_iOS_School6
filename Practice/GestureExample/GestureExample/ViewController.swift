@@ -31,6 +31,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIPickerVie
         self.view.addSubview(myView!)
         
         picker = UIPickerView()
+      
+      print(Bundle.main.bundlePath)
         
     }
     

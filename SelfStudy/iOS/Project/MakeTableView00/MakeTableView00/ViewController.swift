@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         navigationItem.title = "Fruits of the Holy Spirit"
         
+        
         tableView?.delegate = self
         tableView?.dataSource = self
     
