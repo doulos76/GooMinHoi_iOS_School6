@@ -86,6 +86,7 @@
 ## Git ##
 
 * [What is Git?](/Class/Git_SelfStudy.pdf "What is Git?")
+* [Git 고급 명령어](/Practice/Git.md "Git 고급 명령어")
 
 ## Mark Down ##
 
