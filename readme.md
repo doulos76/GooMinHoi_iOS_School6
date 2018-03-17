@@ -45,7 +45,7 @@
 
 ### Initialization ###
 
-* [Initialization](Practice/Initialization.md "Initialization")
+* cd[Initialization](Practice/Initialization.md "Initialization")
 
 ### Instance ###
 
@@ -78,6 +78,13 @@
  
 ## Algorithm ##
 
+
+## CocoaPods
+
+* [CocoaPods 설치](/Pracitce/InstallCocoaPods.md "CocoaPods 설치")
+## Alamofire
+
+* [Alamofire 설치](/Pracitce/InstallAlamofire.md "Alamofire 설치")
 
 ## Design Pattern ##
 
