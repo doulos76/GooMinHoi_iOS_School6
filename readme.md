@@ -81,10 +81,10 @@
 
 ## CocoaPods
 
-* [CocoaPods 설치](/Pracitce/InstallCocoaPods.md "CocoaPods 설치")
+* [CocoaPods 설치](/Practice/InstallCocoaPods.md "CocoaPods 설치")
 ## Alamofire
 
-* [Alamofire 설치](/Pracitce/InstallAlamofire.md "Alamofire 설치")
+* [Alamofire 설치](/Practice/InstallAlamofire.md "Alamofire 설치")
 
 ## Design Pattern ##
 
