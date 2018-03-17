@@ -110,7 +110,7 @@
 
 ## Swift API guideline ##
 
- * [Swift API Design Guidelines](Class/Swift_API_Design_Guidelines.md "Swift API Design Guidelines") 
+ * [Swift API Design Guidelines](Practice/Swift_API_Design_Guidelines.md "Swift API Design Guidelines") 
 
 ## Sandboxing ##
 
