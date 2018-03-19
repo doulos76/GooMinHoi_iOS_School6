@@ -41,7 +41,7 @@
  
 6. 설치 확인
 
-	![](./Img/folderImage.png "CocoaPods")
+	![](/Img/folderImage.png)
 	
 
 [참고 : 꼼꼼한 재은씨의 스위프트 실전편]
