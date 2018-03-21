@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                    animations: {
                     self.circleView.transform = .identity
     }, completion: nil)
-    
+
     circleView.transform = CGAffineTransform(scaleX: 0, y: 0)
     UIView.animate(withDuration: 1,
                    delay: 0,
