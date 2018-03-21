@@ -71,6 +71,7 @@
 ## iOS Framework Study ##
 
 * [Auto Layout](/Class/Lecture_AutoLayout.md "Auto Layout")
+* [Alert View](/Practice/alert.md "Alert View")
 
 ## Object-Oriented Programming ##
 
