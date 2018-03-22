@@ -102,6 +102,7 @@ final class ViewController: UIViewController {
     if let data = try? Data(contentsOf: url) {
       print("image downloaded")
       _ = UIImage(data: data)
+      imageView.image = UIImage(data: data)
     }
   }
   
@@ -222,9 +223,9 @@ final class ViewController: UIViewController {
   
   @IBAction private func urlRequest(_ sender: Any) {
     print("\n---------- [ urlRequest ] ----------\n")
-    // makeGetCall()
-    // makePostCall()
-    makeDeleteCall()
+     //makeGetCall()
+     makePostCall()
+    //makeDeleteCall()
   }
   
   
