@@ -59,6 +59,7 @@ class ViewController: UIViewController {
 //        print(course.name)
       } catch let jsonError {
         print("Error serializing json", jsonError)
+        print("test")
       }
     }.resume()
     
