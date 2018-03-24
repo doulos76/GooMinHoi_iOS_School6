@@ -95,25 +95,25 @@ class ViewController: UIViewController {
   
   @IBAction private func syncMethod() {
     print("\n------------------ [ syncMethod ] ------------------\n")
-    let url = URL(string: "http://lorempixel.com/860/640/cats/")!
+    let url = URL(string: "https://lorempixel.com/860/640/cats/")!
     
     
-    if let data = try? Data(contentsOf: url) {
-      print("image downloaded1")
-      self.imageView.image = UIImage(data: data)
-    }
-    //    DispatchQueue.global().async() {
-    //      if let data = try? Data(contentsOf: url) {
-    //        DispatchQueue.main.async {
-    //              print("image downloaded1")
-    //          self.imageView.image = UIImage(data: data)
-    //        }
-    //      }
-    //    }
-    //    print("image downloaded2")
-    //  }
+//    if let data = try? Data(contentsOf: url) {
+//      print("image downloaded1")
+//      self.imageView.image = UIImage(data: data)
+//    }
+        DispatchQueue.global().async() {
+          if let data = try? Data(contentsOf: url) {
+            DispatchQueue.main.async {
+                  print("image downloaded1")
+              self.imageView.image = UIImage(data: data)
+            }
+          }
+        }
+        print("image downloaded2")
+      }
     //}
-  }
+  //}
 
   
   
