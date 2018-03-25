@@ -489,6 +489,110 @@ class School: Named {
 }
 
 ```
+## 프로토콜의 상속과 클래스 전용 프로토콜
+
+프로토콜은 하나 이상의 프로토콜을 상속받아 기존 프로토콜의 요구사항보다 더 많은 요구사항을 추가할 수 있음.
+
+프로토콜 상속 문법은 클래스의 상속 문법과 유사함
+
+```swift
+
+protocol Readable {
+  func read()
+}
+
+protocol Writable {
+  func write()
+}
+
+protocol ReadSpeakable: Readable {
+  func speak()
+}
+
+protocol ReadWriteSpeakable: Readable, Writable {
+  func speak()
+}
+
+class SomeClass: ReadWriteSpeakable {
+  func read() {
+    print("Read")
+  }
+  
+  func wirte() {
+    print("Wirte")
+  }
+  
+  func speak() {
+    print("Speak")
+  }
+}
+```
+ReadSpeakable 프로토콜은 Readable Protocol을, ReadWriteSpeakable Protocol은 Readable, Writeable Protocol을 상속받았음. ReadWriteSpeakable Protocol을 채택한 SomeClass는 세 프로토콜이 요구하는 read(), write(), speak() 메서드를 모두 구현해야 함.
+
+프로토콜의 상속 리스트에 class키워드를 추가해 프로토콜이 클래스 타입에만 채택될 수 있도록 제한할 수도 있음.
+클래스 전용 프로토콜로 제한을 주기 위해서는 프로토콜의 상속 리스트의 맨 처음에 class 키워드가 위치해야 함.
+
+```swift
+protocol ClassOnlyProtocol: Class, Readable, Writeable {
+  // 추가 요구사항
+}
+
+class SomeClass: ClassOnlyProtocol {
+  func read() { }
+  func write() { }
+}
+
+// 오류!! ClassOnlyProtocol 프로토콜은 클래스 타입에만 채택 가능함
+struct SomeStruct: ClassOnlyProtocol {
+  func read() { }
+  func write() { }
+}
+
+```
+## 프로토콜 조합과 프로토콜 준수 확인
+
+하나의 매개변수가 여러 프로토콜을 모두 준수하는 타입일 때 하나의 매개변수에 여러 프로토콜을 한 번에 조합하여 요구할 수 있음.
+
+SomeProtocol __&__ AnotherProtocol
+
+참고 - __야곰님__ 의 __스위프트 프로그래밍 2판__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
