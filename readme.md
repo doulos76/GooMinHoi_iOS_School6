@@ -65,6 +65,7 @@
 
 ### Collection ###
 * [Collection](Practice/CollectionType.md "Collection")
+* [enum](Practice/enum.md "enum")
 
 
 
