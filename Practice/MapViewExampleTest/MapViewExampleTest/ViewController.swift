@@ -1,31 +1,29 @@
 //
 //  ViewController.swift
-//  MapViewExample
+//  MapViewExampleTest
 //
-//  Created by dave on 06/04/2018.
+//  Created by dave on 07/04/2018.
 //  Copyright © 2018 dave. All rights reserved.
 //
-// System Framework ( A -> Z)
+
+// System Framework is here (A to Z)
 import CoreLocation
 import MapKit
 import UIKit
-// 3rd Party Framework
+
+// 3rd Party Framework is here
 
 class ViewController: UIViewController {
-  
+  //MARK:- Properties
+  @IBOutlet weak var coordinateLabel: UILabel!      // 현재 위 경도 좌표를 나타냄
   @IBOutlet weak var mapView: MKMapView!
-  @IBOutlet weak var coordinateLabel: UILabel!
   
   private let locationManager = CLLocationManager()
-
+  
+  //MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     locationManager.delegate = self
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -39,20 +37,25 @@ class ViewController: UIViewController {
     case .authorizedAlways, .authorizedWhenInUse:
       locationManager.requestLocation()
     }
+
   }
   
-  // MARK: Action Handler
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
   
-  // 광화문 세종대왕 동상
-  @IBAction private func moveToInitialCoordinate(_ sender: Any) {
+  //MARK: - Action Handler
+  
+  @IBAction func moveToInitialCoordinate(_ sender: Any) {
     let center = CLLocationCoordinate2D(latitude: 37.572851, longitude: 126.976881)
-    //위도: 111 Km, / 경도: 위도에 따라 111 ~ 0kM
+    // 위도: 111 Km, 경도: 위도에 따라 111 ~ 0 Km
     let span = MKCoordinateSpanMake(0.01, 0.01)
     let region = MKCoordinateRegionMake(center, span)
     mapView.setRegion(region, animated: true)
   }
   
-  @IBAction private func startUpdatingLocation(_ sender: Any) {
+  @IBAction func startUpdateLocation(_ sender: Any) {
     switch CLLocationManager.authorizationStatus() {
     case .notDetermined:
       locationManager.requestWhenInUseAuthorization()
@@ -67,17 +70,17 @@ class ViewController: UIViewController {
     // locationManager.requestLocation()
   }
   
-  @IBAction private func stopUpdateLocation(_ sender: Any) {
+  @IBAction func stopUpdateLocation(_ sender: Any) {
     locationManager.stopUpdatingLocation()
   }
   
-  @IBAction private func updateCurrentLocation(_ sender: Any) {
+  @IBAction func updateCurrentLocation(_ sender: Any) {
     locationManager.requestLocation()
     let coordinate = mapView.centerCoordinate
     coordinateLabel.text = String(format: "위도: %2.4f, 경도: %2.4f", arguments: [coordinate.latitude, coordinate.longitude])
   }
   
-  @IBAction private func addAnnotationAtCenter(_ sender: Any) {
+  @IBAction func addAnnotationAtCenter(_ sender: Any) {
     let annotation = MKPointAnnotation()
     annotation.title = "MapCenter"
     annotation.coordinate = mapView.centerCoordinate
@@ -85,7 +88,7 @@ class ViewController: UIViewController {
     coordinateLabel.text = "Annotation 추가"
   }
   
-  @IBAction private func addAnnotationAtNamsan(_ sender: Any) {
+  @IBAction func addAnnotationAtNamsan(_ sender: Any) {
     let namsan = MKPointAnnotation()
     namsan.title = "남산"
     namsan.subtitle = "남산타워"
@@ -93,14 +96,12 @@ class ViewController: UIViewController {
     mapView.addAnnotation(namsan)
   }
   
-  @IBAction private func removeAllAnnotations(_ sender: Any) {
+  @IBAction func removeAllAnotations(_ sender: Any) {
     mapView.removeAnnotations(mapView.annotations)
   }
-  
-
 }
 
-// MARK: - CLLocationManager
+//MARK: CLLocationManager
 extension ViewController: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     guard let location = locations.last else { return }
@@ -120,5 +121,4 @@ extension ViewController: CLLocationManagerDelegate {
       print("Unauthorized")
     }
   }
-  
 }

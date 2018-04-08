@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapViewExampleTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-jH-Llf">
+                                <rect key="frame" x="166.66666666666666" y="44" width="41.666666666666657" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuw-Ay-mE5">
+                                <rect key="frame" x="16" y="126.33333333333331" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr9-iI-6ub">
+                                        <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="tlm-RS-3pW"/>
+                                        </constraints>
+                                        <state key="normal" title="추적시작"/>
+                                        <connections>
+                                            <action selector="startUpdateLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrg-2I-00d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moD-zk-Pd2">
+                                        <rect key="frame" x="85.666666666666686" y="0.0" width="86" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="i5o-DM-A3c"/>
+                                        </constraints>
+                                        <state key="normal" title="추적중단"/>
+                                        <connections>
+                                            <action selector="stopUpdateLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lm6-em-Ue6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKJ-mA-VQE">
+                                        <rect key="frame" x="171.66666666666666" y="0.0" width="85.666666666666657" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="f0k-rm-UFy"/>
+                                        </constraints>
+                                        <state key="normal" title="업데이트"/>
+                                        <connections>
+                                            <action selector="updateCurrentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bud-Yz-Q3h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bre-bb-8wn">
+                                        <rect key="frame" x="257.33333333333331" y="0.0" width="85.666666666666686" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="3bp-2D-NOh"/>
+                                        </constraints>
+                                        <state key="normal" title="초기위치로"/>
+                                        <connections>
+                                            <action selector="moveToInitialCoordinate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Tx-Z0-azq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="moD-zk-Pd2" firstAttribute="width" secondItem="Zr9-iI-6ub" secondAttribute="width" id="6zi-H8-u1O"/>
+                                    <constraint firstItem="bre-bb-8wn" firstAttribute="width" secondItem="Zr9-iI-6ub" secondAttribute="width" id="GvX-FW-D2b"/>
+                                    <constraint firstItem="dKJ-mA-VQE" firstAttribute="width" secondItem="Zr9-iI-6ub" secondAttribute="width" id="gdO-Bc-GRj"/>
+                                </constraints>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-J6-IWR">
+                                <rect key="frame" x="16" y="172.33333333333331" width="343" height="589.66666666666674"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwN-47-PEm">
+                                <rect key="frame" x="16" y="80.333333333333329" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb0-dg-xaB">
+                                        <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="30"/>
+                                        <state key="normal" title="센터핀추가"/>
+                                        <connections>
+                                            <action selector="addAnnotationAtCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeU-a8-2gm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEo-4b-a54">
+                                        <rect key="frame" x="85.666666666666686" y="0.0" width="86" height="30"/>
+                                        <state key="normal" title="남산핀추가"/>
+                                        <connections>
+                                            <action selector="addAnnotationAtNamsan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Oy-Tp-A8w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-ig-6cw">
+                                        <rect key="frame" x="171.66666666666666" y="0.0" width="85.666666666666657" height="30"/>
+                                        <state key="normal" title="핀제거"/>
+                                        <connections>
+                                            <action selector="removeAllAnotations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trg-So-dN9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-t4-ZQm">
+                                        <rect key="frame" x="257.33333333333331" y="0.0" width="85.666666666666686" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="ef5-dn-BZY"/>
+                                        </constraints>
+                                        <state key="normal" title="Do noting"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yEo-4b-a54" firstAttribute="width" secondItem="rb0-dg-xaB" secondAttribute="width" id="Bu2-5h-kNW"/>
+                                    <constraint firstItem="2N2-ig-6cw" firstAttribute="width" secondItem="rb0-dg-xaB" secondAttribute="width" id="cF8-yi-KhB"/>
+                                    <constraint firstItem="tZk-t4-ZQm" firstAttribute="width" secondItem="rb0-dg-xaB" secondAttribute="width" id="uq5-MX-HL2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2bl-jH-Llf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1nX-ru-QXZ"/>
+                            <constraint firstItem="dwN-47-PEm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Wh-cr-4M2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2bl-jH-Llf" secondAttribute="trailing" id="DSr-hw-Pgu"/>
+                            <constraint firstItem="c0X-J6-IWR" firstAttribute="top" secondItem="Zr9-iI-6ub" secondAttribute="bottom" constant="16" id="HAT-yc-a2B"/>
+                            <constraint firstItem="c0X-J6-IWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HRe-gJ-uod"/>
+                            <constraint firstItem="dwN-47-PEm" firstAttribute="top" secondItem="2bl-jH-Llf" secondAttribute="bottom" constant="16" id="Hs4-9L-cIr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wuw-Ay-mE5" secondAttribute="trailing" constant="16" id="W48-L8-mUe"/>
+                            <constraint firstItem="wuw-Ay-mE5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Y61-uw-OS9"/>
+                            <constraint firstItem="wuw-Ay-mE5" firstAttribute="top" secondItem="dwN-47-PEm" secondAttribute="bottom" constant="16" id="d3b-Ts-8bn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c0X-J6-IWR" secondAttribute="bottom" constant="16" id="hnC-eQ-dMF"/>
+                            <constraint firstItem="c0X-J6-IWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iXW-TU-5JW"/>
+                            <constraint firstItem="c0X-J6-IWR" firstAttribute="top" secondItem="wuw-Ay-mE5" secondAttribute="bottom" constant="16" id="j1X-Rq-kGM"/>
+                            <constraint firstItem="wuw-Ay-mE5" firstAttribute="top" secondItem="dwN-47-PEm" secondAttribute="bottom" constant="16" id="pI2-xB-jbe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c0X-J6-IWR" secondAttribute="trailing" constant="16" id="pJ1-l1-o6b"/>
+                            <constraint firstItem="2bl-jH-Llf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQ8-BR-h63"/>
+                            <constraint firstItem="2bl-jH-Llf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ynu-fo-hXW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dwN-47-PEm" secondAttribute="trailing" constant="16" id="zum-R2-9Tx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coordinateLabel" destination="2bl-jH-Llf" id="Hvd-Qw-pGN"/>
+                        <outlet property="mapView" destination="c0X-J6-IWR" id="387-FY-a43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
+        </scene>
+    </scenes>
+</document>
