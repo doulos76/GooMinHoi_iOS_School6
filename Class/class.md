@@ -350,10 +350,292 @@ convenience init(parameters) {
 ![](/Img/initializerDelegation02_2x.png)
 
 
+## Required Initializers
+
+* 상속을 받는 subClass가 꼭 구현해야 함
+
+```swift
+class SomeClass {
+	required init() {
+		// initializer implementation goes here
+	}
+}
+```
+
+* 해당 initializer는 필수적으로 구현해야만 함.
+* 상속받은 모든 클래스는 필수로 구현해야 함.
+* required initializer를 구혈할 땐 override 수식어를 사용할 필요 없음.
+
+## Setting a Default Property Value with a Closure of Function
+
+```swift
+class SomeClass {
+	let someProperty: SomeType = {
+		// 해당 클로져 안에 프로퍼티의 기본값을 지정함.
+		// someValue는 반드시 SomeType과 타입이 같아야 함.
+		return someValue
+	}()
+}
+```
+
+* class의 init시 해당 property의 값이 할당되며, 값대신 closure나 전역 함수를 사용할 수 있다.
+* closure 사용시 마지막에()를 붙여 closure를 바로 실행 시킴.
+
+## Classes vs Structures
+
+* class는 참조 타입이며, structure 는 값 타입
+* class는 상속을 통해 부모클래스의 특성을 상속받을 수 있음.
+* class는 Type Casting을 사용할 수 있음(structure 불가)
+* Structure의 property는 instance가 var를 통해서 만들어야 수정 가능함.
+* class는 Refernece Counting을 통해 instance의 해제를 계산함.
+* class는 deinitializer를 사용할 수 있음.
+
+## 값타입 vs 참조타입
+
+### Memory 구조
+
+* 논리적 메모리 구조를 형상화 한 그림
+
+| STACK |    <- 지역 변수, 매개 변수 등     |
+|-------|------------------------------|
+| HEAP  |    <- 동적 할당을 위한 영역.      |
+| DATA  |    <- 전역 변수, 정적 변수가 저장  |
+| CODE  |    <- 프로그램 code 저장.       |
+
+#### Memory 구조 파악하기(지역변수)
+
+
+```swift
+var num: Int = 4
+var num2: Int = 5
+```
+
+* __STACK__ : 지역 변수, 매개 변수 등이 저장됨.
+
+```swift
+num = 4, num2 = 5
+```
+
+* __CODE__ : 프로그램 code 저장
+
+```swift
+var num: Int = 4
+var num2: Int = 5
+```
+
+#### Memory 구조 파악하기(class, instance)
+
+
+```swift
+let person: Person = Person()
+```
+
+* __STACK__ : person = instance 주소
+
+```swift
+person: Person
+```
+
+* __HEAP__ : Person() = instance
+
+```swift
+Person()
+```
+
+
+* __CODE__ : 프로그램 code 저장
+
+```swift
+let person: Person = Person()
+```
+
+#### Memory 구조 파악하기(static constant)
+
+
+```swift
+static let number: Int = 5
+```
+
+* __DATA__ : number = 5
+
+```swift
+number = 5
+```
+
+
+* __CODE__ : 프로그램 code 저장
+
+```swift
+static let number: Int = 5
+```
+
+#### Memory 구조 파악하기(function, parameter)
+
+
+```swift
+func sumTwoNumber(num1: Int, num2: Int) -> Int {
+	return num1 + num2
+}
+```
+
+* __STACK__ : num1 = 3, num2 = 4
+
+```swift
+(num1:3, num2: 4)
+```
+
+* __CODE__ : 프로그램 code 저장
+
+```swift
+func sumTwoNumber(num1: Int, num2: Int) -> Int {
+	return num1 + num2
+}
+```
+
+
+## Pointer
+
+* Pointer는 Programming lanaguage에서 다른 변수, 혹은 그 변수의 메모리 공간주소를 가리키는 변수를 말함.
+
+
+## Value type, Reference type
+
+```swift
+var name: String = "joo"
+var reName: String = name
+
+reName = "wing"
+// name의 값은?
+
+let person: Person = Person()
+let person2: Person = Person()
+person.name = "joo"
+
+person2.name = "wing"
+// person 인스턴스의 name 프로퍼티의 값은?
+```
+
+
+## Struct-Value Type 프로퍼티 수정
+
+* 기본적으로 구조체와 열거형의 값타입 프로퍼티는 인스턴스 메소드 내에서 수정이 불가능 함.
+* 그러나 특정 메소드에서 수정을 해야 할 경우에는 mutating 키워드를 통해 변경 가능함.
+
+```swift
+struct Point {
+	var x = 0.0, y = 0.0
+	mutating func movebBy(x deltaX: Double, y deltaY: Double) {
+		x += deltaX
+		y += deltaY
+}
+
+```
+
+## Class - Deinit
+
+* example: Notification에 사용
+
+  - 중앙에 모든 인스턴스의 행동을 관리하는 아이가 있을 때, ARC로 사라질 때, notification, singleton에서 init이나 deinit을 통해 알릴 수 있다.
 
 
 
+```swift
+class Student {
+	init() {
+		// 인스턴스 생성시 필요한 내용 구현
+	}
+	
+	deinit {
+		// 종료직전 필요한 내용 구현
+	}
+}
+```
 
+## Class - 상속
+
+* Subclassing
+* 기존에 구현되어있는 클래스를 확장, 변형
+* 부모 클래스와 자식 클래스로 관계를 표현
+
+  super class: 추상적, 포괄적
+  
+  sub class: 구체적
+
+* 상속할수록 더 확장되는 구조
+  * 즉, 자식이 기능이 더 많다.
+
+  예제: 동물
+  
+  움직이는 생물체
+  
+  포유류
+  
+  - 새끼를 낳음
+
+  - 움직임
+
+  ![](/Img/class_example.png)
+  
+
+## Class의 상속
+
+* class에선 단 하나의 클래스만 상속 받을 수 있음.
+* struct, enum은 상속 받을 수 없음.
+* 클래스 이름뒤에 (: 부모클래스)fmf cnrkgka.
+* protocol과 문법이 같다.
+	
+	- 프로토콜은 여러개를 받을 수 있음
+	- 프로토콜은 rule이다. 법이기 때문에 반드시 꼭 만들어야 함. 지켜야 함.
+
+	- 예)
+
+	```swift
+	class ChildClass: ParentClass, Prtocol1, Protocol2, ... {
+		// statements
+	}
+	```
+	
+## 재정의 (Override)
+
+* override
+* 부모 클래스에게서 물려받은 성질을 그대로 사용하지 않고 자식 클래스에게 맞는 형태 또는 행위로 변경하여 사용할 수 있는 기능
+
+```swift
+class Person {
+	func eat() {
+		print("집밥을 먹음")
+	}
+}
+
+class Student: Person {
+	override func eat() {
+		print("급식을 먹음")
+	}
+}
+
+class UniversityStudent: Student {
+	override func eat() {
+		print("학식을 먹음")
+	}
+}
+
+```
+
+## 다형성
+
+* 재정의(ovrride)와 중복정의(overload)는 OOP의 다형성의 또 다른 모습
+* `Ojective-C`는 __Overload를 지원하지 않음__.
+* `swift`는 __Overload를 지원함__.
+
+## Apple guideline : struct를 사용할 경우
+
+* type에 가까울 때: struct
+* object에 가까울 때: class
+
+* 연관된 간단하 값의 집합을 캡슐화하는 것만이 목적일 때
+* 캡슐화된 값이 참조되는 것보다 복사되는 것이 합당할 때
+* 구조체에 저장된 프로퍼티가 값타입이며 참조되는 것보다는 복사되는 것이 합당할 때
+* 다른 타입으로부터 상속받거나 자신이 상속될 필요가 없을 때
 
 
 

@@ -173,5 +173,9 @@ __굵게 쓰기(bold)__
  *****
  
  
+이미지 삽입
+===
+
+![](/Img/initializerDelegation02_2x.png)
 
 
