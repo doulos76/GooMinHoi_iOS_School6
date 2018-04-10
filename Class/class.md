@@ -312,11 +312,42 @@ struct Subject {
   var age: Int?
   var gender: Bool
   
-  __init(gender: Bool) {__
-    __self.gender = gender__
-  __}__
+  init(gender: Bool) {
+    self.gender = gender
+  }
 }
 ```
+## 상속과 initializers
+
+* Parent Class로 부터 상속받은 모든 저장 속성은 초기화할 때 초기 값을 할당 받아야 함.
+* Swift는 class type에 모든 저장 속성에 초기 값을 받도록 도와주는 두가지 initializser를 정의함. 이를 지정 이니셜라이져(designated initializers)와 편의 이니셜라이저(convenience initializers)라고 함.
+
+## Designated initializers
+
+```swift
+init(parameters) {
+	statements
+}
+```
+
+* 모든 properties가 초기화 되어야 한다.
+* 상속을 받았다며 부모 클래스의 Designated initializers를 호출 해야 함.
+
+## Convenience initializers
+
+```swift
+convenience init(parameters) {
+	statements
+}
+```
+
+* 다른 convenience initializer을 호출할 수 있음.
+* 하지만 궁극적으론 designated initializer를 호출해야만 함.
+
+## Designated & Convenience 모식도
+
+
+![initializerDelegation02_2x](/img/initializerDelegation02_2x.png)
 
 
 
