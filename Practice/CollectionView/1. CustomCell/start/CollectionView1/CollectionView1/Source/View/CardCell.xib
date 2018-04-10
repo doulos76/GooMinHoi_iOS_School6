@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="gTV-IL-0wX" customClass="CardCell" customModule="CollectionView1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R63-Ag-pCx">
+                        <rect key="frame" x="0.0" y="2" width="150" height="150"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c14-Bl-Dox" customClass="CardCell" customModule="CollectionView1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1W-z7-jbt">
+                                <rect key="frame" x="10" y="14.5" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29811289612676056" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d1W-z7-jbt" firstAttribute="centerY" secondItem="c14-Bl-Dox" secondAttribute="centerY" id="AyE-h9-Cdc"/>
+                            <constraint firstAttribute="trailing" secondItem="d1W-z7-jbt" secondAttribute="trailing" constant="10" id="bmy-ey-uVX"/>
+                            <constraint firstItem="d1W-z7-jbt" firstAttribute="leading" secondItem="c14-Bl-Dox" secondAttribute="leading" constant="10" id="q3E-4c-JC4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="c14-Bl-Dox" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Ez-jE-8wr"/>
+                <constraint firstAttribute="trailing" secondItem="c14-Bl-Dox" secondAttribute="trailing" id="LOO-Ow-Su1"/>
+                <constraint firstItem="c14-Bl-Dox" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h6e-gg-GP1"/>
+                <constraint firstAttribute="bottom" secondItem="c14-Bl-Dox" secondAttribute="bottom" constant="100" id="iYR-n9-oxb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="183" height="181"/>
+            <connections>
+                <outlet property="cardImageView" destination="R63-Ag-pCx" id="eIg-sh-Lax"/>
+                <outlet property="nameLabel" destination="d1W-z7-jbt" id="Grv-qI-OQe"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="119"/>
+        </collectionViewCell>
+    </objects>
+</document>
