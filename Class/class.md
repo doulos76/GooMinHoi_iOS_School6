@@ -347,7 +347,7 @@ convenience init(parameters) {
 ## Designated & Convenience 모식도
 
 
-![initializerDelegation02_2x](/img/initializerDelegation02_2x.png)
+![initializerDelegation02_2x](./img/initializerDelegation02_2x.png)
 
 
 
