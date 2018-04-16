@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550826E7207EFEA000DEB993 /* TimeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550826E6207EFEA000DEB993 /* TimeHandler.swift */; };
-		550826E9207F02A200DEB993 /* MyPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550826E8207F02A200DEB993 /* MyPhotoCollectionViewCell.swift */; };
-		55C65C4E207DF725003B3E92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C65C4D207DF725003B3E92 /* AppDelegate.swift */; };
-		55C65C50207DF725003B3E92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C65C4F207DF725003B3E92 /* ViewController.swift */; };
-		55C65C53207DF725003B3E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C65C51207DF725003B3E92 /* Main.storyboard */; };
-		55C65C55207DF726003B3E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C65C54207DF726003B3E92 /* Assets.xcassets */; };
-		55C65C58207DF726003B3E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C65C56207DF726003B3E92 /* LaunchScreen.storyboard */; };
+		550826CF207EEF6100DEB993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550826CE207EEF6100DEB993 /* AppDelegate.swift */; };
+		550826D1207EEF6100DEB993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550826D0207EEF6100DEB993 /* ViewController.swift */; };
+		550826D4207EEF6100DEB993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550826D2207EEF6100DEB993 /* Main.storyboard */; };
+		550826D6207EEF6300DEB993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550826D5207EEF6300DEB993 /* Assets.xcassets */; };
+		550826D9207EEF6300DEB993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550826D7207EEF6300DEB993 /* LaunchScreen.storyboard */; };
+		550826E5207EEFF100DEB993 /* Bible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550826E4207EEFF100DEB993 /* Bible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		550826E6207EFEA000DEB993 /* TimeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHandler.swift; sourceTree = "<group>"; };
-		550826E8207F02A200DEB993 /* MyPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		55C65C4A207DF725003B3E92 /* KeyboardHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		55C65C4D207DF725003B3E92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55C65C4F207DF725003B3E92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55C65C52207DF725003B3E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55C65C54207DF726003B3E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		55C65C57207DF726003B3E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		55C65C59207DF726003B3E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550826CB207EEF6100DEB993 /* BibleReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		550826CE207EEF6100DEB993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		550826D0207EEF6100DEB993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		550826D3207EEF6100DEB993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		550826D5207EEF6300DEB993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		550826D8207EEF6300DEB993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		550826DA207EEF6300DEB993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550826E4207EEFF100DEB993 /* Bible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		55C65C47207DF725003B3E92 /* Frameworks */ = {
+		550826C8207EEF6100DEB993 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55C65C41207DF725003B3E92 = {
+		550826C2207EEF6100DEB993 = {
 			isa = PBXGroup;
 			children = (
-				55C65C4C207DF725003B3E92 /* KeyboardHandler */,
-				55C65C4B207DF725003B3E92 /* Products */,
+				550826CD207EEF6100DEB993 /* BibleReading */,
+				550826CC207EEF6100DEB993 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		55C65C4B207DF725003B3E92 /* Products */ = {
+		550826CC207EEF6100DEB993 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55C65C4A207DF725003B3E92 /* KeyboardHandler.app */,
+				550826CB207EEF6100DEB993 /* BibleReading.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		55C65C4C207DF725003B3E92 /* KeyboardHandler */ = {
+		550826CD207EEF6100DEB993 /* BibleReading */ = {
 			isa = PBXGroup;
 			children = (
-				55C65C4D207DF725003B3E92 /* AppDelegate.swift */,
-				55C65C4F207DF725003B3E92 /* ViewController.swift */,
-				55C65C51207DF725003B3E92 /* Main.storyboard */,
-				550826E6207EFEA000DEB993 /* TimeHandler.swift */,
-				55C65C54207DF726003B3E92 /* Assets.xcassets */,
-				55C65C56207DF726003B3E92 /* LaunchScreen.storyboard */,
-				55C65C59207DF726003B3E92 /* Info.plist */,
-				550826E8207F02A200DEB993 /* MyPhotoCollectionViewCell.swift */,
+				550826E3207EEFCE00DEB993 /* Resources */,
+				550826E2207EEFBD00DEB993 /* ViewController */,
+				550826E1207EEFAF00DEB993 /* View */,
+				550826E0207EEFA600DEB993 /* Model */,
+				550826CE207EEF6100DEB993 /* AppDelegate.swift */,
+				550826D0207EEF6100DEB993 /* ViewController.swift */,
+				550826D2207EEF6100DEB993 /* Main.storyboard */,
+				550826D5207EEF6300DEB993 /* Assets.xcassets */,
+				550826D7207EEF6300DEB993 /* LaunchScreen.storyboard */,
+				550826DA207EEF6300DEB993 /* Info.plist */,
 			);
-			path = KeyboardHandler;
+			path = BibleReading;
+			sourceTree = "<group>";
+		};
+		550826E0207EEFA600DEB993 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		550826E1207EEFAF00DEB993 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		550826E2207EEFBD00DEB993 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		550826E3207EEFCE00DEB993 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				550826E4207EEFF100DEB993 /* Bible.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55C65C49207DF725003B3E92 /* KeyboardHandler */ = {
+		550826CA207EEF6100DEB993 /* BibleReading */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55C65C5C207DF726003B3E92 /* Build configuration list for PBXNativeTarget "KeyboardHandler" */;
+			buildConfigurationList = 550826DD207EEF6300DEB993 /* Build configuration list for PBXNativeTarget "BibleReading" */;
 			buildPhases = (
-				55C65C46207DF725003B3E92 /* Sources */,
-				55C65C47207DF725003B3E92 /* Frameworks */,
-				55C65C48207DF725003B3E92 /* Resources */,
+				550826C7207EEF6100DEB993 /* Sources */,
+				550826C8207EEF6100DEB993 /* Frameworks */,
+				550826C9207EEF6100DEB993 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KeyboardHandler;
-			productName = KeyboardHandler;
-			productReference = 55C65C4A207DF725003B3E92 /* KeyboardHandler.app */;
+			name = BibleReading;
+			productName = BibleReading;
+			productReference = 550826CB207EEF6100DEB993 /* BibleReading.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		55C65C42207DF725003B3E92 /* Project object */ = {
+		550826C3207EEF6100DEB993 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = dave;
 				TargetAttributes = {
-					55C65C49207DF725003B3E92 = {
+					550826CA207EEF6100DEB993 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 55C65C45207DF725003B3E92 /* Build configuration list for PBXProject "KeyboardHandler" */;
+			buildConfigurationList = 550826C6207EEF6100DEB993 /* Build configuration list for PBXProject "BibleReading" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +142,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 55C65C41207DF725003B3E92;
-			productRefGroup = 55C65C4B207DF725003B3E92 /* Products */;
+			mainGroup = 550826C2207EEF6100DEB993;
+			productRefGroup = 550826CC207EEF6100DEB993 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55C65C49207DF725003B3E92 /* KeyboardHandler */,
+				550826CA207EEF6100DEB993 /* BibleReading */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		55C65C48207DF725003B3E92 /* Resources */ = {
+		550826C9207EEF6100DEB993 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C65C58207DF726003B3E92 /* LaunchScreen.storyboard in Resources */,
-				55C65C55207DF726003B3E92 /* Assets.xcassets in Resources */,
-				55C65C53207DF725003B3E92 /* Main.storyboard in Resources */,
+				550826D9207EEF6300DEB993 /* LaunchScreen.storyboard in Resources */,
+				550826D6207EEF6300DEB993 /* Assets.xcassets in Resources */,
+				550826D4207EEF6100DEB993 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		55C65C46207DF725003B3E92 /* Sources */ = {
+		550826C7207EEF6100DEB993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550826E7207EFEA000DEB993 /* TimeHandler.swift in Sources */,
-				550826E9207F02A200DEB993 /* MyPhotoCollectionViewCell.swift in Sources */,
-				55C65C50207DF725003B3E92 /* ViewController.swift in Sources */,
-				55C65C4E207DF725003B3E92 /* AppDelegate.swift in Sources */,
+				550826D1207EEF6100DEB993 /* ViewController.swift in Sources */,
+				550826CF207EEF6100DEB993 /* AppDelegate.swift in Sources */,
+				550826E5207EEFF100DEB993 /* Bible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55C65C51207DF725003B3E92 /* Main.storyboard */ = {
+		550826D2207EEF6100DEB993 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				55C65C52207DF725003B3E92 /* Base */,
+				550826D3207EEF6100DEB993 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		55C65C56207DF726003B3E92 /* LaunchScreen.storyboard */ = {
+		550826D7207EEF6300DEB993 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				55C65C57207DF726003B3E92 /* Base */,
+				550826D8207EEF6300DEB993 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +198,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		55C65C5A207DF726003B3E92 /* Debug */ = {
+		550826DB207EEF6300DEB993 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +258,7 @@
 			};
 			name = Debug;
 		};
-		55C65C5B207DF726003B3E92 /* Release */ = {
+		550826DC207EEF6300DEB993 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,36 +312,36 @@
 			};
 			name = Release;
 		};
-		55C65C5D207DF726003B3E92 /* Debug */ = {
+		550826DE207EEF6300DEB993 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z6U9FKXA9;
-				INFOPLIST_FILE = KeyboardHandler/Info.plist;
+				INFOPLIST_FILE = BibleReading/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobileandsmile.KeyboardHandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileandsmile.BibleReading;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		55C65C5E207DF726003B3E92 /* Release */ = {
+		550826DF207EEF6300DEB993 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z6U9FKXA9;
-				INFOPLIST_FILE = KeyboardHandler/Info.plist;
+				INFOPLIST_FILE = BibleReading/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobileandsmile.KeyboardHandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileandsmile.BibleReading;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,25 +351,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		55C65C45207DF725003B3E92 /* Build configuration list for PBXProject "KeyboardHandler" */ = {
+		550826C6207EEF6100DEB993 /* Build configuration list for PBXProject "BibleReading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55C65C5A207DF726003B3E92 /* Debug */,
-				55C65C5B207DF726003B3E92 /* Release */,
+				550826DB207EEF6300DEB993 /* Debug */,
+				550826DC207EEF6300DEB993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55C65C5C207DF726003B3E92 /* Build configuration list for PBXNativeTarget "KeyboardHandler" */ = {
+		550826DD207EEF6300DEB993 /* Build configuration list for PBXNativeTarget "BibleReading" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55C65C5D207DF726003B3E92 /* Debug */,
-				55C65C5E207DF726003B3E92 /* Release */,
+				550826DE207EEF6300DEB993 /* Debug */,
+				550826DF207EEF6300DEB993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 55C65C42207DF725003B3E92 /* Project object */;
+	rootObject = 550826C3207EEF6100DEB993 /* Project object */;
 }
