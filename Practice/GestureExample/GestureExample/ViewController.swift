@@ -85,6 +85,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, UIPickerVie
         coordinatesLabel.text = String("X:\(touch.location(in: touch.view).x), Y: \(touch.location(in: touch.view).y)")
         myView?.frame = CGRect(x: touch.location(in: touch.view).x - 25, y: touch.location(in: touch.view).y - 25, width: 50, height: 50)
         countLabel.text = String(touch.tapCount)
+        print("tapped")
         return true
     }
     
