@@ -12,6 +12,9 @@
 		5515048520842D6A00301489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5515048320842D6A00301489 /* Main.storyboard */; };
 		5515048720842D6C00301489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5515048620842D6C00301489 /* Assets.xcassets */; };
 		5515048A20842D6C00301489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5515048820842D6C00301489 /* LaunchScreen.storyboard */; };
+		554B4D44208431F6005096A5 /* DiaryFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B4D43208431F6005096A5 /* DiaryFormViewController.swift */; };
+		554B4D46208434B5005096A5 /* DateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B4D45208434B5005096A5 /* DateHandler.swift */; };
+		554B4D4820843508005096A5 /* KeyboardAccessaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B4D4720843508005096A5 /* KeyboardAccessaryViewController.swift */; };
 		EA0B1C078B55D5DF361749D9 /* Pods_MyProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6482077D5366963A941E0D5 /* Pods_MyProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		5515048620842D6C00301489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5515048920842D6C00301489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5515048B20842D6C00301489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554B4D43208431F6005096A5 /* DiaryFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFormViewController.swift; sourceTree = "<group>"; };
+		554B4D45208434B5005096A5 /* DateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHandler.swift; sourceTree = "<group>"; };
+		554B4D4720843508005096A5 /* KeyboardAccessaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAccessaryViewController.swift; sourceTree = "<group>"; };
 		A6482077D5366963A941E0D5 /* Pods_MyProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F948AB75E1D4C4172598E170 /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +73,9 @@
 				5515048620842D6C00301489 /* Assets.xcassets */,
 				5515048820842D6C00301489 /* LaunchScreen.storyboard */,
 				5515048B20842D6C00301489 /* Info.plist */,
+				554B4D43208431F6005096A5 /* DiaryFormViewController.swift */,
+				554B4D45208434B5005096A5 /* DateHandler.swift */,
+				554B4D4720843508005096A5 /* KeyboardAccessaryViewController.swift */,
 			);
 			path = MyProject;
 			sourceTree = "<group>";
@@ -200,8 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554B4D46208434B5005096A5 /* DateHandler.swift in Sources */,
+				554B4D44208431F6005096A5 /* DiaryFormViewController.swift in Sources */,
 				5515048220842D6A00301489 /* ViewController.swift in Sources */,
 				5515048020842D6A00301489 /* AppDelegate.swift in Sources */,
+				554B4D4820843508005096A5 /* KeyboardAccessaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +361,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z6U9FKXA9;
 				INFOPLIST_FILE = MyProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobileandsmile.MyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -365,7 +380,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z6U9FKXA9;
 				INFOPLIST_FILE = MyProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobileandsmile.MyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

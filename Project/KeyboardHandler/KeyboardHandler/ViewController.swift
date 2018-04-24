@@ -34,7 +34,6 @@ class ViewController: UIViewController {
     let addImageButton = UIBarButtonItem(title: "Photo", style: UIBarButtonItemStyle.done, target: self, action: #selector(addImage(_:)))
     
     toolBar.setItems([timeStampLabel,flexibleSpace, addImageButton, flexibleSpace, doneButton], animated: false)
-    
     nameTextField.inputAccessoryView = toolBar
     phoneNumberTextField.inputAccessoryView = toolBar
     myDiaryText.inputAccessoryView = toolBar
@@ -56,7 +55,7 @@ class ViewController: UIViewController {
   func displayCurrentDate() {
     let date = Date()
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd"
+    dateFormatter.dateFormat = "EEEE / MMMM dd / yyyy"
     let stringDate = dateFormatter.string(from: date)
     currentDate.text = stringDate
   }
@@ -88,17 +87,3 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     picker.dismiss(animated: false)
   }
 }
-
-//extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-//  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//    if let imageCount: Int = imageArray?.count {
-//      return imageCount
-//    }
-//    return 0
-//  }
-//
-//  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyPhotoCollectionViewCell", for: indexPath) as! MyPhotoCollectionViewCell
-//    return cell
-//  }
-//}

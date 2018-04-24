@@ -106,7 +106,10 @@
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="ef5-dn-BZY"/>
                                         </constraints>
-                                        <state key="normal" title="Do noting"/>
+                                        <state key="normal" title="현재 위치로"/>
+                                        <connections>
+                                            <action selector="moveToCurrentCoordinate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8b-ZX-zdy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

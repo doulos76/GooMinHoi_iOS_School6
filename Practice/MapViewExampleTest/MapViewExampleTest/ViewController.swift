@@ -19,6 +19,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var mapView: MKMapView!
   
   private let locationManager = CLLocationManager()
+  private var currentLocationLatitude: CLLocationDegrees = 0
+  private var currentLocationLongitude: CLLocationDegrees = 0
   
   //MARK: - Lifecycle
   override func viewDidLoad() {
@@ -54,6 +56,34 @@ class ViewController: UIViewController {
     let region = MKCoordinateRegionMake(center, span)
     mapView.setRegion(region, animated: true)
   }
+  
+  @IBAction func moveToCurrentCoordinate(_ sender: Any) {
+    //startUpdateLocation(())
+    //stopUpdateLocation(())
+    
+    locationManager.requestLocation()
+    let coordinate = mapView.centerCoordinate
+    coordinateLabel.text = String(format: "위도: %2.4f, 경도: %2.4f", arguments: [coordinate.latitude, coordinate.longitude])
+
+    let latitudeDelta: CLLocationDegrees = 0.01
+    let longitudeDelta: CLLocationDegrees = 0.01
+    let userLatitude: CLLocationDegrees = coordinate.latitude
+    let userLongitude: CLLocationDegrees = coordinate.longitude
+    let center = CLLocationCoordinate2D(latitude: userLatitude, longitude: userLongitude)
+    let span = MKCoordinateSpanMake(latitudeDelta, longitudeDelta)
+    let region = MKCoordinateRegionMake(center, span)
+    mapView.setRegion(region, animated: true)
+    
+//    let currentLocation = MKPointAnnotation()
+//    currentLocation.title = "일기 쓴 곳"
+//    let currentLatitude : CLLocationDegrees = userLatitude
+//    let currentLongitude: CLLocationDegrees = userLongitude
+//    currentLocation.coordinate = CLLocationCoordinate2D(latitude: currentLatitude, longitude: currentLongitude)
+//    mapView.addAnnotation(currentLocation)
+
+  }
+    
+    
   
   @IBAction func startUpdateLocation(_ sender: Any) {
     switch CLLocationManager.authorizationStatus() {
