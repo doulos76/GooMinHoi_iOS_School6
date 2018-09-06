@@ -322,7 +322,7 @@ func printDictinary(of dic:[String: Any]) {
         print(key, value)
     }
 }
-let sampelDic: [String: Any] = ["name":"joo", "age":20, "job":"Developer"]
+let sampelDic: [String: Any] = ["name": "joo", "age": 20, "job": "Developer"]
 printDictinary(of: sampelDic)
 
 //Level 2
@@ -333,23 +333,3 @@ printDictinary(of: sampelDic)
 //Level 3
 //정수 타입의 배열을 입력받아서 오름차순으로 정렬된 배열을 만들어 리턴하시오.(정렬 함수 사용x)   (정렬의 효율은 보지 않습니다.)
 //>>에라토스테체 알고리즘을 이용하여  입력된 숫자까지의 모든 소수의 배열을 반환하는 함수
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

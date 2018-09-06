@@ -2,8 +2,6 @@
 
 import UIKit
 
-var str = "Hello, playground"
-
 //Level 1
 //시작과 끝수를 받아서 두 수 사이의 모든 수를 가지고 있는 배열 만들기
 func makeArray(from startNumber: Int, endNumber: Int) -> [Int] {

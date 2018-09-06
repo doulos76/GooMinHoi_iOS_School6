@@ -2,13 +2,8 @@
 
 import UIKit
 
-class Person
-{
-    
-    
-    // 기본적인 초기화
-    init() {
-        
-        
-    }
+class Person {  
+  // 기본적인 초기화
+  init() {
+  }
 }

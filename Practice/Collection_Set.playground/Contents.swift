@@ -2,7 +2,7 @@
 
 import UIKit
 
-// Set
+//: Set
 
 func setTest()
 {

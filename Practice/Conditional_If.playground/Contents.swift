@@ -2,7 +2,6 @@
 
 import UIKit
 
-var str = "Hello, playground"
 var score: Double = 97
 // 시험 점수를 받아서 해당 점수의 등급을 반환해 주는 함수
 func returnGradeforScore(inputScore: Double) -> String {

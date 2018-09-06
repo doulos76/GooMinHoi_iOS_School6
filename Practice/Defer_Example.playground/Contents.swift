@@ -2,7 +2,7 @@
 
 //: ## Defer Statement
 
-/*
+/*:
 Defer Statement
  A defer statement is used for executing code just before transferring program control outside of the scope that the defer statement appears in
  ```

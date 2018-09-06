@@ -3,48 +3,35 @@
 import UIKit
 
 
-func grade(of score:Int) -> String
-{
+func grade(of score: Int) -> String {
     var grade: String = "F"
-    if score <= 100
-    {
-        if score <= 100 && score >= 95
-        {
+    if score <= 100 {
+        if score <= 100 && score >= 95 {
             grade = "A+"
-        }else if score >= 90
-        {
+        } else if score >= 90 {
             grade = "A"
-        }else if score >= 85
-        {
+        } else if score >= 85 {
             grade = "B+"
-        }else if score >= 80
-        {
+        } else if score >= 80 {
             grade = "B"
-        }else if score >= 75
-        {
+        } else if score >= 75 {
             grade = "C+"
         }
     }
     return grade
 }
 
-func point(of grade:String) -> Double
-{
+func point(of grade: String) -> Double {
     var point: Double = 0.0
-    if grade == "A+"
-    {
+    if grade == "A+" {
         point = 4.5
-    }else if grade == "A"
-    {
+    } else if grade == "A" {
         point = 4.0
-    }else if grade == "B+"
-    {
+    } else if grade == "B+" {
         point = 3.5
-    }else if grade == "B"
-    {
+    } else if grade == "B"{
         point = 3.0
-    }else if grade == "C+"
-    {
+    } else if grade == "C+" {
         point = 2.5
     }
     return point

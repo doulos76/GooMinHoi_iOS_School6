@@ -1,11 +1,8 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
-
-
 //triangular
-func triangular(num:Int) -> Int
-{
+func triangular(num: Int) -> Int {
     var tempNum: Int = num
     var resultNum = 0
     while tempNum > 0 {
@@ -20,8 +17,7 @@ print(result)
 
 
 //addAll
-func addAll(num:Int) -> Int
-{
+func addAll(num:Int) -> Int {
     var tempNum:Int = num
     var sumNum:Int = 0
     while tempNum > 0 {
@@ -36,26 +32,20 @@ let resultAddAll: Int = addAll(num: 10)
 print(resultAddAll)
 
 // Harshad
-func isHarshad(num:Int) -> Bool
-{
+func isHarshad(num:Int) -> Bool {
     var isHarshardNum = false
-    if num > 0
-    {
+    if num > 0 {
         var tempNum = num
         var sumNum = 0
         while tempNum > 0 {
             sumNum += (tempNum % 10)
             tempNum /= 10
         }
-        if num % sumNum == 0
-        {
+        if num % sumNum == 0 {
             isHarshardNum = true
         }
     }
-    
     return isHarshardNum
 }
 
 isHarshad(num: 199)
-
-

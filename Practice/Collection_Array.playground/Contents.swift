@@ -2,15 +2,13 @@
 
 import UIKit
 
-var str = "Hello, playground"
-
 var ageDef = Int(10)
 var ageCasting = Int("10")
 var ageLiteral = 10
 
 
 //Array 만드는 법
-var list:[String] = ["abc", "cde"]
+var list: [String] = ["abc", "cde"]
 
 // 빈 배열 생성
 var someInts: [Int] = [1, 2, 3, 4]
@@ -18,10 +16,10 @@ someInts = []
 
 
 // type을 지정하지 않으면 error 발생
-//var errorList = [] >>> erroer 발생
+// var errorList = [] >>> erroer 발생
 var nonErrorList = [1, 2, 3]
 
-var testStringofInt: String = String(123)
+var testStringOfInt: String = String(123)
 var testString: String = String("123")
 
 var num: Int = 5
@@ -32,7 +30,7 @@ var num: Int = 5
 
 3.distance(to: 5)
 
-//Array
+// Array
 
 var todoList: [String] = ["eating", "drivinng", "working"]
 todoList.count
@@ -50,8 +48,7 @@ todoList
 
 // 배열 예제
 
-func arrayTest()
-{
+func arrayTest() {
     var list: [String] = ["my", "name", "is", "a","joo", "youngmin"]
     list.append("입니다.")
     print("list배열의 총 갯수는 ", list.count)
@@ -68,30 +65,8 @@ func arrayTest()
 
 arrayTest()
 
+var capacityListArray: [Int] = [ 1, 2, 3]
+capacityListArray.capacity
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var capacityListDic: [String: Any] = ["name": "KMH", "age": 12, "Major": "Electronics", "Hobby": "Drawing", "MarriedAge": "33"]
+capacityListDic.capacity

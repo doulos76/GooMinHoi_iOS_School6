@@ -75,44 +75,6 @@ func performClosure(param: (String) -> Int) {
 
 performClosure { $0.count }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 performClosure {(str: String) -> Int in
   return str.count
 }
@@ -142,7 +104,3 @@ performClosure() {
 }
 
 performClosure { $0.count }
-*/
-
-
-//: [Next](@next)

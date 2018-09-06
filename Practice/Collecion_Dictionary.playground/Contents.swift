@@ -1,12 +1,11 @@
 //: Playground - noun: a place where people can play
+//: # Collection - Dictionary
 
 import UIKit
 
-var str = "Hello, playground"
-
 var someInts: Dictionary<String, [String]> = [String: [String]]()
 
-var person:[String:Any] = ["name":"joo", "age":20, "isSingle":true]
+var person:[String: Any] = ["name": "joo", "age": 20, "isSingle": true]
 let name1 = person["name"] //type은 Any
 let name2 = person["name"] as! String //type은 String
 
@@ -27,18 +26,16 @@ person.updateValue(21, forKey: "age")
 person.removeValue(forKey: "isSingle")
 person.capacity
 person.count
-
 print(person)
 
-func dicTest()
-{
+func dicTest() {
     // 기본 딕셔너리
     var dic: [String: Any] = ["name": "Joo", "age": 20, "job": "Developer", "isSIngle": true]
     
     //딕셔너리 추가
-    dic.updateValue("adderess", forKey: "Seoul")
+    dic.updateValue("Seoul", forKey: "adderess")
     //딕셔너리 수정
-    dic.updateValue("name", forKey: "winman")
+    dic.updateValue("winman", forKey: "name")
     //삭제
     dic.removeValue(forKey: "isSingle")
     
@@ -55,4 +52,3 @@ func dicTest()
 }
 
 dicTest()
-
