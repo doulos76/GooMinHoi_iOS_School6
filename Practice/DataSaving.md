@@ -2,14 +2,16 @@
 
 ## Property List
 
-## Property list - plist
+![](/Img/plistScreenShot.png)
+
+### Property list - plist
 
 
-* Sample한 "file" 저장 방법 중 하나.
+* Simple한 "file" 저장 방법 중 하나.
 * Key, Value 구조로 데이터 저장
 * File 형태로 저장되다 보니 외부에서Access 가능(보안 취약)
 
-## File location
+### File location
 
 * file이 저장되는 곳 : Bundle & Documents folder
 * Bundle은  project에 추가된. Resource가 모인 곳
@@ -18,7 +20,7 @@
 * __즉! plist file의 데이터만 불러오는 역할은 bundle을 통해서, plist 파일에 데이터를 쓰고 불러오는 역할은 Documents폴더에 저장된 파일로!__
 
 
-## Plist File in Bundle
+### Plist File in Bundle
 
 1. bundle에 있는 파일 Path 가져오기
 2. Path를 통해 객체로 변환, 데아ㅣ터 부러오기
@@ -28,16 +30,16 @@
 
 * 실행코드, 이미지, 사운드, nib file, frame work, 설정 파일 등 코드와 resource가 모여 있는 file system 내의 directory
 
-## Bundle resource 확인
+### Bundle resource 확인
 
-## Main Bundle 가져오기
+### Main Bundle 가져오기
 
 ```swift
 // Get the amin bundle for the app.
 let mainBundle = Bundle.main
 ```
 
-## Resource file 주소 가져오기
+### Resource file 주소 가져오기
 
 ```swift
 // Get the main bundle for the app.
@@ -45,7 +47,7 @@ let mainBundle = Bundle.main
 let filePath = mainBundle.path(forResource: "rName", ofType: "rType")
 ```
 
-## 데이터 불러오기
+### 데이터 불러오기
 
 ```swift
 if let path = filePath {
@@ -53,7 +55,7 @@ if let path = filePath {
 }
 ```
 
-## Plist file in Bundle
+### Plist file in Bundle
 
 ```swift
 if let filePath = mainBundle.path(forResource: "rName", ofType: "rType"),
@@ -62,7 +64,7 @@ let dict = NSDictionary(contentsOfFile: filePath) as? [String: Any] {
 }
 ```
 
-## Plist file 불러오기
+### Plist file 불러오기
 * 앱내 저장되어 있는 plist 리소스 파일의 데이터는 번들을 통해 가져올 수 있다.
 
 
