@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     mapView.setRegion(region, animated: true)
   }
   
-  @IBAction private func startUpdatingLocation(_ sender: Any) {
+  @IBAction private func startUpdatingLocation(_ sender: UIButton) {
     switch CLLocationManager.authorizationStatus() {
     case .notDetermined:
       locationManager.requestWhenInUseAuthorization()
@@ -67,17 +67,17 @@ class ViewController: UIViewController {
     // locationManager.requestLocation()
   }
   
-  @IBAction private func stopUpdateLocation(_ sender: Any) {
+  @IBAction private func stopUpdateLocation(_ sender: UIButton) {
     locationManager.stopUpdatingLocation()
   }
   
-  @IBAction private func updateCurrentLocation(_ sender: Any) {
+  @IBAction private func updateCurrentLocation(_ sender: UIButton) {
     locationManager.requestLocation()
     let coordinate = mapView.centerCoordinate
     coordinateLabel.text = String(format: "위도: %2.4f, 경도: %2.4f", arguments: [coordinate.latitude, coordinate.longitude])
   }
   
-  @IBAction private func addAnnotationAtCenter(_ sender: Any) {
+  @IBAction private func addAnnotationAtCenter(_ sender: UIButton) {
     let annotation = MKPointAnnotation()
     annotation.title = "MapCenter"
     annotation.coordinate = mapView.centerCoordinate
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     coordinateLabel.text = "Annotation 추가"
   }
   
-  @IBAction private func addAnnotationAtNamsan(_ sender: Any) {
+  @IBAction private func addAnnotationAtNamsan(_ sender: UIButton) {
     let namsan = MKPointAnnotation()
     namsan.title = "남산"
     namsan.subtitle = "남산타워"
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     mapView.addAnnotation(namsan)
   }
   
-  @IBAction private func removeAllAnnotations(_ sender: Any) {
+  @IBAction private func removeAllAnnotations(_ sender: UIButton) {
     mapView.removeAnnotations(mapView.annotations)
   }
   
