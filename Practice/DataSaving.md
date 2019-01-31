@@ -23,23 +23,23 @@
 ### Plist File in Bundle
 
 1. bundle에 있는 파일 Path 가져오기
-2. Path를 통해 객체로 변환, 데아ㅣ터 부러오기
+2. Path를 통해 객체로 변환, Data 불러오기
 3. 사용
 
-## Bundle
+### Bundle
 
 * 실행코드, 이미지, 사운드, nib file, frame work, 설정 파일 등 코드와 resource가 모여 있는 file system 내의 directory
 
 ### Bundle resource 확인
 
-### Main Bundle 가져오기
+#### Main Bundle 가져오기
 
 ```swift
 // Get the amin bundle for the app.
 let mainBundle = Bundle.main
 ```
 
-### Resource file 주소 가져오기
+#### Resource file 주소 가져오기
 
 ```swift
 // Get the main bundle for the app.
@@ -47,7 +47,7 @@ let mainBundle = Bundle.main
 let filePath = mainBundle.path(forResource: "rName", ofType: "rType")
 ```
 
-### 데이터 불러오기
+#### 데이터 불러오기
 
 ```swift
 if let path = filePath {
@@ -55,7 +55,7 @@ if let path = filePath {
 }
 ```
 
-### Plist file in Bundle
+#### Plist file in Bundle
 
 ```swift
 if let filePath = mainBundle.path(forResource: "rName", ofType: "rType"),
@@ -64,14 +64,14 @@ let dict = NSDictionary(contentsOfFile: filePath) as? [String: Any] {
 }
 ```
 
-### Plist file 불러오기
+#### Plist file 불러오기
 * 앱내 저장되어 있는 plist 리소스 파일의 데이터는 번들을 통해 가져올 수 있다.
 
 
 ## Plist file in Document
 
 1. Document folder Path 찾기
-2. Document folder에 plist 파일이 잇는지 확인
+2. Document folder에 plist 파일이 있는지 확인
  * 만약 없다면 : Bundle에 있는 파일 Document에 복사
 3. Path를 통해 객체로 변환, 데이터 불러오기
 4. wirteToFile 메서로 파일 저장
