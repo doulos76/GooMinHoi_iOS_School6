@@ -90,7 +90,8 @@
 
 ## Design Pattern ##
 
-* [Singleton](/Class/DesignPattern-Singleton.md "Singleton")
+* [Singleton 1](/Class/DesignPattern-Singleton.md "Singleton")
+* [Singleton 2](/Practice/SingletonPattern.md "Singleton")
 * [Protocol,Delegation](/Practice/Protocol.md "Protocol,Delegation") 
 
 ## Git ##
