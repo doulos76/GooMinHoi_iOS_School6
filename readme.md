@@ -121,6 +121,9 @@
 ## Data Saving ##
 * [Data Saving](Practice/DataSaving.md "Data Saving")
 
+## Data Modeling
+* [Data Modeling](Practice/DataModel.md "Data Modeling")
+
 ## About me ##
 
 * My Profile
